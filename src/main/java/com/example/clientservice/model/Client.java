@@ -13,7 +13,6 @@ public class Client {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long clientId; // Primary key generated automatically
     private String username;
-    @Column(columnDefinition = "VARCHAR(100)") // Ensure the field is large enough
     private String password;
     private String email;
     @Column(nullable = true) // Make premiumId nullable
